@@ -6,16 +6,29 @@
     <title>234</title>
 </head>
 <body>
-<?php
+<table>
+<tr>
+    <th>Nom</th>
+    <th>Alçada</th>
+</tr>
+    <?php
+    $sumaAltura = 0;
     $persones = [
         ['nom' => 'Arthur','alçada' => 185],
         ['nom' => 'Viti','alçada' => 200],
         ['nom' => 'Boki','alçada' => 174],
-        ['nom' => 'Jadex','alçada' => 165],
+        ['nom' => 'Jadex','alçada' => 170],
         ['nom' => 'NikoPiki','alçada' => 190]];
-    for ($i = 0; $i < count($persones)x; $i++) {
-        echo $persones[$i]['nom'];
+    for ($i = 0; $i < count($persones); $i++) {
+        echo '<tr>';
+        echo '<td>' . $persones[$i]['nom'] . '</td>';
+        echo '<td>' . $persones[$i]['alçada'] . '</td>';
+        echo '<tr>';
+        $sumaAltura += $persones[$i]['alçada'];
     }
-?>
+    $alturaMedia = $sumaAltura / count($persones);
+    ?>
+</table>
+    <div>Altura media : <?=$alturaMedia?></div>
 </body>
 </html>

@@ -36,5 +36,3 @@
 </table>
 </body>
 </html>
-
-<?php
