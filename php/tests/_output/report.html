@@ -210,14 +210,14 @@
  <body>
    <ul id="toolbar-filter">
      <li> <a href="#" title="Show all" onClick="showAllScenarios()">◯</a></li>
-     <li> <a href="#" title="Successful" onClick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 13</a></li>
-     <li> <a href="#" title="Failed" onClick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 7</a></li>
+     <li> <a href="#" title="Successful" onClick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 15</a></li>
+     <li> <a href="#" title="Failed" onClick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 5</a></li>
      <li> <a href="#" title="Skipped" onClick="toggleScenarios('scenarioSkipped', this.parentElement)"><strong>S</strong> 0</a></li>
      <li> <a href="#" title="Incomplete" onClick="toggleScenarios('scenarioIncomplete', this.parentElement)"><strong>I</strong> 0</a></li>
      <li> <a href="#" title="Useless" onClick="toggleScenarios('scenarioUseless', this.parentElement)"><strong>U</strong> 0</a></li>
    </ul>
  <div class="layout">
- <h1>Codeception Results <small><span style="color: #e74c3c">FAILED</span> (00:15.733)</small></h1>
+ <h1>Codeception Results <small><span style="color: #e74c3c">FAILED</span> (00:15.970)</small></h1>
 
 
 
@@ -229,7 +229,7 @@
 </tr>   <tr class="scenarioRow scenarioSuccess">
     <td>
      <p class="scenarioSuccess" onclick="showHide('1', this)"><span class="toggle">+</span>
-          <span class="quiet">ArraysCest &raquo;</span> Try230 works test <span style="color: #34495e; font-size: 70%;">1.22s</span></p>
+          <span class="quiet">ArraysCest &raquo;</span> Try230 works test <span style="color: #34495e; font-size: 70%;">1.2s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
@@ -297,15 +297,15 @@
    </tr>
 
 
-   <tr class="scenarioRow scenarioFailed">
+   <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioFailed" onclick="showHide('3', this)"><span class="toggle">+</span>
-          <span class="quiet">ArraysCest &raquo;</span> Try234 works test <span style="color: #34495e; font-size: 70%;">0.01s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('3', this)"><span class="toggle">+</span>
+          <span class="quiet">ArraysCest &raquo;</span> Try234 works test <span style="color: #34495e; font-size: 70%;">0.23s</span></p>
     </td>
    </tr>
-   <tr class="scenarioRow scenarioFailed">
+   <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer3">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer3">
 
 
       <tr>
@@ -313,21 +313,13 @@
       </tr>
 
       <tr>
-       <td class="stepName failedStep">&nbsp;&nbsp;&nbsp;&nbsp;I see in source <span style="color: #732E81">&quot;&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Nom&lt;/th&gt; &lt;th&gt;Alçada&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt;&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see in source <span style="color: #732E81">&quot;&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Nom&lt;/th&gt; &lt;th&gt;Alçada&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt;&quot;</span></td>
       </tr>
 
 
-         <tr >
-    <td class="error">
-        Failed asserting that on page /234.php<br />
---> File not found.<br />
-<br />
---> contains "<table> <thead> <tr> <th>Nom</th> <th>Alçada</th> </tr> </thead>".
-    </td>
-</tr>
-
          
-         <tr><td class='error'>See <a href='ArraysCest.try234WorksTest.fail.html' target='_blank'>HTML snapshot</a> of a failed page</td></tr>
+         
+         
      </table>
 
 
@@ -335,15 +327,15 @@
    </tr>
 
 
-   <tr class="scenarioRow scenarioFailed">
+   <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioFailed" onclick="showHide('4', this)"><span class="toggle">+</span>
-          <span class="quiet">ArraysCest &raquo;</span> Try235 works test <span style="color: #34495e; font-size: 70%;">0.01s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('4', this)"><span class="toggle">+</span>
+          <span class="quiet">ArraysCest &raquo;</span> Try235 works test <span style="color: #34495e; font-size: 70%;">0.21s</span></p>
     </td>
    </tr>
-   <tr class="scenarioRow scenarioFailed">
+   <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer4">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer4">
 
 
       <tr>
@@ -351,21 +343,13 @@
       </tr>
 
       <tr>
-       <td class="stepName failedStep">&nbsp;&nbsp;&nbsp;&nbsp;I see in source <span style="color: #732E81">&quot;&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Nom&lt;/th&gt; &lt;th&gt;Alçada&lt;/th&gt; &lt;th&gt;Email&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt;&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see in source <span style="color: #732E81">&quot;&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Nom&lt;/th&gt; &lt;th&gt;Alçada&lt;/th&gt; &lt;th&gt;Email&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt;&quot;</span></td>
       </tr>
 
 
-         <tr >
-    <td class="error">
-        Failed asserting that on page /235.php<br />
---> File not found.<br />
-<br />
---> contains "<table> <thead> <tr> <th>Nom</th> <th>Alçada</th> <th>Email</th> </tr> </thead>".
-    </td>
-</tr>
-
          
-         <tr><td class='error'>See <a href='ArraysCest.try235WorksTest.fail.html' target='_blank'>HTML snapshot</a> of a failed page</td></tr>
+         
+         
      </table>
 
 
@@ -456,7 +440,7 @@
    <tr class="scenarioRow scenarioSuccess">
     <td>
      <p class="scenarioSuccess" onclick="showHide('7', this)"><span class="toggle">+</span>
-          <span class="quiet">BuclesCest &raquo;</span> Try222 works test <span style="color: #34495e; font-size: 70%;">0.83s</span></p>
+          <span class="quiet">BuclesCest &raquo;</span> Try222 works test <span style="color: #34495e; font-size: 70%;">0.84s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
@@ -711,7 +695,7 @@
    <tr class="scenarioRow scenarioSuccess">
     <td>
      <p class="scenarioSuccess" onclick="showHide('12', this)"><span class="toggle">+</span>
-          <span class="quiet">BuclesCest &raquo;</span> Try227 works test <span style="color: #34495e; font-size: 70%;">0.21s</span></p>
+          <span class="quiet">BuclesCest &raquo;</span> Try227 works test <span style="color: #34495e; font-size: 70%;">0.22s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
@@ -787,7 +771,7 @@
    <tr class="scenarioRow scenarioSuccess">
     <td>
      <p class="scenarioSuccess" onclick="showHide('14', this)"><span class="toggle">+</span>
-          <span class="quiet">PhpBasicCest &raquo;</span> Try202 works test <span style="color: #34495e; font-size: 70%;">0.23s</span></p>
+          <span class="quiet">PhpBasicCest &raquo;</span> Try202 works test <span style="color: #34495e; font-size: 70%;">0.21s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
@@ -977,7 +961,7 @@
          <tr >
     <td class="error">
         Failed asserting that on page /205.php<br />
--->  ( ! ) Warning: Undefined array key "dinero" in /var/www/php/src/205.php on line 6 Call Stack #TimeMemoryFunctionLocation 10.2040397392{main}( ).../205.php:0 0 billet de 1000 billet de 500 billet de 200 billet de 100 moneda de 2<br />
+-->  ( ! ) Warning: Undefined array key "dinero" in /var/www/php/src/205.php on line 6 Call Stack #TimeMemoryFunctionLocation 10.2036397392{main}( ).../205.php:0 0 billet de 1000 billet de 500 billet de 200 billet de 100 moneda de 2<br />
 --> contains "Posa la quantitat a la variable quantitat pel QueryString".
     </td>
 </tr>
@@ -1014,7 +998,7 @@
          <tr >
     <td class="error">
         Failed asserting that on page /206.php<br />
--->  ( ! ) Warning: Undefined array key "num" in /var/www/php/src/206.php on line 3 Call Stack #TimeMemoryFunctionLocation 10.2039394696{main}( ).../206.php:0 El número es: zero<br />
+-->  ( ! ) Warning: Undefined array key "num" in /var/www/php/src/206.php on line 3 Call Stack #TimeMemoryFunctionLocation 10.2035394696{main}( ).../206.php:0 El número es: zero<br />
 --> contains "Posa el numero a comprobar a la variable numero del QueryString".
     </td>
 </tr>
@@ -1031,7 +1015,7 @@
    <tr class="scenarioRow scenarioFailed">
     <td>
      <p class="scenarioFailed" onclick="showHide('19', this)"><span class="toggle">+</span>
-          <span class="quiet">PhpBasicCest &raquo;</span> Try207 works test <span style="color: #34495e; font-size: 70%;">0.22s</span></p>
+          <span class="quiet">PhpBasicCest &raquo;</span> Try207 works test <span style="color: #34495e; font-size: 70%;">0.21s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioFailed">
@@ -1051,7 +1035,7 @@
          <tr >
     <td class="error">
         Failed asserting that on page /207.php<br />
--->  ( ! ) Warning: Undefined array key "a" in /var/www/php/src/207.php on line 3 Call Stack #TimeMemoryFunctionLocation 10.2041395064{main}( ).../207.php:0 ( ! ) Warning: Undefined array key "b" in /var/www/php/src/207.php on line 4 Call Stack #TimeMemoryFunctionLocation 10.2041395064{main}( ).../207.p<br />
+-->  ( ! ) Warning: Undefined array key "a" in /var/www/php/src/207.php on line 3 Call Stack #TimeMemoryFunctionLocation 10.2035395064{main}( ).../207.php:0 ( ! ) Warning: Undefined array key "b" in /var/www/php/src/207.php on line 4 Call Stack #TimeMemoryFunctionLocation 10.2035395064{main}( ).../207.p<br />
 [Content too long to display. See complete response in '/var/www/php/tests/_output/' directory]<br />
 --> contains "Posa els números a comprobar a les variables numero1,numero2 i numero3 pel QueryString".
     </td>
@@ -1089,7 +1073,7 @@
          <tr >
     <td class="error">
         Failed asserting that on page /208.php<br />
--->  ( ! ) Warning: Undefined array key "edat" in /var/www/php/src/208.php on line 3 Call Stack #TimeMemoryFunctionLocation 10.2040395912{main}( ).../208.php:0 Eres un bebé<br />
+-->  ( ! ) Warning: Undefined array key "edat" in /var/www/php/src/208.php on line 3 Call Stack #TimeMemoryFunctionLocation 10.2038395912{main}( ).../208.php:0 Eres un bebé<br />
 --> contains "Posa la teu edat actual a la variable edat pel QueryString".
     </td>
 </tr>
@@ -1160,7 +1144,7 @@
 </tr>   <tr class="scenarioRow scenarioFailed">
     <td>
      <p class="scenarioFailed" onclick="showHide('22', this)">
-          <span class="quiet">FunctionsTest &raquo;</span> Test240 es parell <span style="color: #34495e; font-size: 70%;">0.69s</span></p>
+          <span class="quiet">FunctionsTest &raquo;</span> Test240 es parell <span style="color: #34495e; font-size: 70%;">0.71s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioFailed">
@@ -1214,7 +1198,7 @@
    <tr class="scenarioRow scenarioFailed">
     <td>
      <p class="scenarioFailed" onclick="showHide('24', this)">
-          <span class="quiet">FunctionsTest &raquo;</span> Test240count parells <span style="color: #34495e; font-size: 70%;">0.06s</span></p>
+          <span class="quiet">FunctionsTest &raquo;</span> Test240count parells <span style="color: #34495e; font-size: 70%;">0.05s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioFailed">
@@ -1268,7 +1252,7 @@
    <tr class="scenarioRow scenarioFailed">
     <td>
      <p class="scenarioFailed" onclick="showHide('26', this)">
-          <span class="quiet">FunctionsTest &raquo;</span> Test241 concatenar <span style="color: #34495e; font-size: 70%;">0.06s</span></p>
+          <span class="quiet">FunctionsTest &raquo;</span> Test241 concatenar <span style="color: #34495e; font-size: 70%;">0.05s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioFailed">
@@ -1462,11 +1446,11 @@
       <table border="0">
        <tr>
         <td width="250" class="scenarioSuccess">Successful scenarios:</td>
-        <td class="scenarioSuccessValue"><strong>13</strong></td>
+        <td class="scenarioSuccessValue"><strong>15</strong></td>
        </tr>
        <tr>
         <td class="scenarioFailed">Failed scenarios:</td>
-        <td class="scenarioFailedValue"><strong>7</strong></td>
+        <td class="scenarioFailedValue"><strong>5</strong></td>
        </tr>
        <tr>
         <td class="scenarioSkipped">Skipped scenarios:</td>
