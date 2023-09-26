@@ -46,15 +46,21 @@ function digits(int $num): int {
 
 function digitsN(int $num, int $post): int {
     $stringNum = (string)$num;
-    return (int) substr($stringNum,$post,1);
+    return (int) substr($stringNum,$post-1,1);
 }
 
 function llevaDarrere(int $num, int $cant): int {
     $stringNum = (string)$num;
+    if($cant > strlen($stringNum)){
+        return 0;
+    }
     return (int) substr($stringNum,0,strlen($stringNum) - $cant);
 }
 
 function llevaDavant(int $num, int $cant): int {
     $stringNum = (string)$num;
+    if($cant > strlen($stringNum)){
+        return 0;
+    }
     return (int) substr($stringNum,$cant,strlen($stringNum) - $cant);
 }

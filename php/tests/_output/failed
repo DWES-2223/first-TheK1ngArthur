@@ -8,8 +8,6 @@ tests/acceptance/PhpBasicCest.php:try205WorksTest
 tests/acceptance/PhpBasicCest.php:try206WorksTest
 tests/acceptance/PhpBasicCest.php:try207WorksTest
 tests/acceptance/PhpBasicCest.php:try208WorksTest
-tests/unit/FunctionsTest.php:test242DigitsN
-tests/unit/FunctionsTest.php:test242LlevaDarrere
 tests/acceptance/BuclesCest.php:try224WorksTest
 tests/unit/FunctionsTest.php:test243peseta2Euros
 tests/unit/FunctionsTest.php:test243euro2Pesetes
