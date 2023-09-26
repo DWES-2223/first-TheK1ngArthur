@@ -9,7 +9,7 @@ class ActivitatPHP extends \Codeception\Test\Unit
     /*
     protected function _before()
     {
-        include_once('./src/functions.php');
+        include_once('./src/240.php');
     }
 
     public function test270a(){
