@@ -64,3 +64,11 @@ function llevaDavant(int $num, int $cant): int {
     }
     return (int) substr($stringNum,$cant,strlen($stringNum) - $cant);
 }
+
+function peseta2euros(float $pesetes,float $cotizacion = 0.006) : float {
+    return number_format($pesetes * $cotizacion,0,'.','');
+}
+
+function euro2pesetes(float $euros, float $cotizacion = 166) : float {
+    return number_format($euros * $cotizacion,0,'.','');
+}
