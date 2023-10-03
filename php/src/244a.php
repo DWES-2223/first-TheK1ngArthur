@@ -11,10 +11,18 @@
 <body>
 <form action="244b.php" method="post">
     <?php
-        for ($i = 0; $i < $cantidad; $i++) {
-            echo 'Producto ' . ($i + 1) . '<br>';
-            echo '<input type="text" placeholder="Nombre" name="noms[]"<br>';
-            echo '<input type="text" placeholder="Precio" name="precios[]"<br><br>';
+        if(isset($cantidad)) {
+            if(is_numeric($cantidad)) {
+                for ($i = 0; $i < $cantidad; $i++) {
+                    echo 'Producto ' . ($i + 1) . '<br>';
+                    echo '<input id="nom ' . $i . '" type="text" placeholder="Nombre" name="nom[]"<br>';
+                    echo '<input id="preu ' . $i . '" type="text" placeholder="Precio" name="preu[]"<br><br>';
+                }
+            } else {
+                echo 'Dades incorrectes';
+            }
+        } else {
+            echo 'Dades incorrectes';
         }
     ?>
     <input type="submit" value="submit">

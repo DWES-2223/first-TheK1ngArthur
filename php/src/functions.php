@@ -72,3 +72,76 @@ function peseta2euros(float $pesetes,float $cotizacion = 0.006) : float {
 function euro2pesetes(float $euros, float $cotizacion = 166) : float {
     return number_format($euros * $cotizacion,0,'.','');
 }
+
+function vell(array $dates): mixed {
+    $vell = 0;
+    $fechaVell = new DateTime(date("Y"));
+    foreach ($dates as $indice => $valor) {
+        $fechaRecord = new DateTime($valor);
+        if($fechaRecord < $fechaVell){
+            $fechaVell = $fechaRecord;
+            $vell = $indice;
+        }
+    }
+    return $vell;
+}
+
+function jove(array $natalicis, array $dates): mixed {
+    $diferencia = 0;
+    $jove = 0;
+    $posicioJove = 0;
+    for ($i = 0; $i < count($natalicis); $i++) {
+        $diferencia = any($dates[$i]) - $natalicis[$i];
+        if($i == 0){
+            $jove = $diferencia;
+        } else if ($diferencia < $jove){
+            $jove = $diferencia;
+            $posicioJove = $i;
+        }
+    }
+    return $posicioJove;
+}
+
+function any(string $data):string{
+    $dataDateTime = new DateTime($data);
+    return $dataDateTime->format("Y");
+}
+
+function laureado(array $valors):mixed {
+    $contMesRepetit = 0;
+    $mesRepetit = "";
+    foreach ($valors as $subvalors) {
+        $contActual = 0;
+        foreach ($valors as $values) {
+            if($subvalors == $values){
+                $contActual += 1;
+            }
+        }
+        if($contActual > $contMesRepetit){
+            $contMesRepetit = $contActual;
+            $mesRepetit = $subvalors;
+        }
+    }
+    return $mesRepetit;
+}
+
+function fecha_inglesa(string $fecha):string{
+    $fechaDateTime = new DateTime($fecha);
+    return $fechaDateTime->format("Y/m/d");
+}
+
+function array_column_ext($array, $columnkey, $indexkey = null): array
+{
+    $result = array();
+    foreach ($array as $subarray => $value) {
+        if (array_key_exists($columnkey,$value)) { $val = $array[$subarray][$columnkey]; }
+        else if ($columnkey === null) { $val = $value; }
+        else { continue; }
+
+        if ($indexkey === null) { $result[] = $val; }
+        elseif ($indexkey == -1 || array_key_exists($indexkey,$value)) {
+            $result[($indexkey == -1)?$subarray:$array[$subarray][$indexkey]] = $val;
+        }
+    }
+    return $result;
+}

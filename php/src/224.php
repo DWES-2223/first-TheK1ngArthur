@@ -8,7 +8,7 @@
 <?php
 $quantitat = $_POST['quantitat'];
 for ($i = 0; $i < $quantitat; $i++) {
-    echo '<input type="number" name="quantitat' . $i . '" value = "quantitat' . $i . '">';
+    echo '<input type="number" name="quantitat' . $i . '">';
 }
 $valors = $_POST;
 $suma = 0;

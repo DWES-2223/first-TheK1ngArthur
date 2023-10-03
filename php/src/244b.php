@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>244b</title>
     <?php
-        $nombres = $_POST['noms'];
-        $precios = $_POST['precios'];
+        $nombres = $_POST['nom'];
+        $precios = $_POST['preu'];
     include("functions.php");
     ?>
 </head>
@@ -28,6 +28,7 @@
                 echo '<td>' . euro2pesetes($precios[$i]) . '</td>';
                 echo '</tr>';
             }
+            
         ?>
     </tbody>
 </table>

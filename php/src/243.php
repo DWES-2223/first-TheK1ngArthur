@@ -16,13 +16,13 @@
             $pesetes = euro2pesetes($euros);
             ?>
             <label>Euros<input type="number" name="euros" placeholder="<?=$euros?>"></label><br>
-            <label>Pesetas<input type="number" name="pesetes" placeholder="<?=$pesetes?>"></label>
+            <label>Pesetas<input type="number" name="pesetes" value="<?=$pesetes?>" placeholder="<?=$pesetes?>"></label>
         <?php
         } else if (is_numeric($_POST['pesetes'])) {
             $pesetes = $_POST['pesetes'];
             $euros = peseta2euros($pesetes);
             ?>
-            <label>Euros<input type="number" name="euros" placeholder="<?=$euros?>"></label>
+            <label>Euros<input type="number" name="euros" value="<?=$euros?>" placeholder="<?=$euros?>"></label>
             <label>Pesetas<input type="number" name="pesetes" placeholder="<?=$pesetes?>"></label>
         <?php
         } else {
