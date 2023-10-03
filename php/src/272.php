@@ -13,10 +13,12 @@
     <table>
         <?php
         $dates = array_column_ext($records,'data',-1);
+        $natalicis = array_column_ext($records,'natalici',-1);
         $clubs = array_column_ext($records,'club',-1);
         $atletes = array_column_ext($records,'atleta',-1);
         $ciutats = array_column_ext($records,'lloc',-1);
         $vell = vell($dates);
+        $jove = jove($natalicis,$dates);
         $clubTitols = laureado($clubs);
         $personaRecords = laureado($atletes);
         $ciutatPropicia = laureado($ciutats);
@@ -41,6 +43,17 @@
         </tr>
         <tr>
             <td>Ciutat més propicia: <?=$ciutatPropicia?></td>
+        </tr>
+        <tr>
+            <?php
+                foreach ($records as $claveAtleta => $subClave){
+                    if($claveAtleta == $jove){
+                        ?>
+                        <td>Atleta més jove: <?=$subClave['atleta']?></td>
+            <?php
+                    }
+                }
+            ?>
         </tr>
     </table>
     <?php
