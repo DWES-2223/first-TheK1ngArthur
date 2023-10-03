@@ -87,17 +87,18 @@ function vell(array $dates): mixed {
 }
 
 function jove(array $natalicis, array $dates): mixed {
-    $diferencia = 0;
     $jove = 0;
+    $cont = 0;
     $posicioJove = 0;
-    for ($i = 0; $i < count($natalicis); $i++) {
-        $diferencia = any($dates[$i]) - $natalicis[$i];
-        if($i == 0){
+    foreach ($natalicis as $indice => $natalici) {
+        $diferencia = any($dates[$indice]) - $natalici;
+        if($cont == 0){
             $jove = $diferencia;
         } else if ($diferencia < $jove){
             $jove = $diferencia;
-            $posicioJove = $i;
+            $posicioJove = $indice;
         }
+        $cont += 1;
     }
     return $posicioJove;
 }
